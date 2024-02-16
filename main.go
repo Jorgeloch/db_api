@@ -1,8 +1,8 @@
 package main
 
 import (
-	"testePostgres/user/router"
-	"testePostgres/utils"
+	"github.com/jorgeloch/db_api/user/router"
+	"github.com/jorgeloch/db_api/utils"
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 )

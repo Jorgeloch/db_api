@@ -2,8 +2,8 @@ package userController
 
 import (
   "fmt"
-  "testePostgres/utils"
-  "testePostgres/user/model"
+  "github.com/jorgeloch/db_api/utils"
+  "github.com/jorgeloch/db_api/user/model"
   "github.com/gofiber/fiber/v2"
 )
 

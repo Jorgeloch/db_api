@@ -1,7 +1,7 @@
 package userRouter
 
 import (
-	"testePostgres/user/controller"
+	"github.com/jorgeloch/db_api/user/controller"
 	"github.com/gofiber/fiber/v2"
 )
 

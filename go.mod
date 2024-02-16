@@ -1,4 +1,4 @@
-module testePostgres
+module github.com/jorgeloch/db_api
 
 go 1.21.7
 
