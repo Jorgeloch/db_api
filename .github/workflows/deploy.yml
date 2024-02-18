@@ -29,7 +29,7 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            sudo dnf install go
+            sudo dnf install -y go
             cd /home/${{ secrets.REMOTE_USER }}/db_api
             go mod tidy
             go build -v main.go
