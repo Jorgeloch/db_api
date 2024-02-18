@@ -32,4 +32,3 @@ jobs:
             cd /home/${{ secrets.REMOTE_USER }}/db_api
             go mod tidy
             go build -v main.go
-            export DATABASE_URL=${{ secrets.DATABASE_URL }}
