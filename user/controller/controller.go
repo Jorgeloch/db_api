@@ -7,6 +7,14 @@ import (
   "github.com/gofiber/fiber/v2"
 )
 
+//  GetAllUsers godoc
+//	@Summary		Get all users
+//	@Description Get all users	
+//	@Produce		json
+//	@Success		200	{array}	userModel.User
+//	@Failure		400	
+//	@Failure		500
+//	@Router			/user [get]
 func HandleGetAll (c *fiber.Ctx) error{
   users, err := userModel.GetAll() 
   if err != nil {
@@ -16,6 +24,16 @@ func HandleGetAll (c *fiber.Ctx) error{
   return c.JSON(users)
 }
 
+// CreateUser godoc
+//	@Summary		Create a new User
+//	@Description	Create a new User
+//	@Accept			json
+//	@Produce		json
+//  @Param user body userModel.User true "user model to be created" Format(json)
+//	@Success		200	{object}	userModel.User
+//	@Failure		400	
+//	@Failure		500
+//	@Router			/user [post]
 func HandleCreateUser (c *fiber.Ctx) error{
   newUser := new(userModel.User)
   err := c.BodyParser(newUser) 
